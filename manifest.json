@@ -1,0 +1,18 @@
+{
+    "manifest_version": 3,
+    "name": "immobilienscout24 reduced by wohnungstausch/wohnungsswap",
+    "version": "1.0",
+    "content_scripts": [
+        {
+            "matches": [
+                "https://www.immobilienscout24.de/*"
+            ],
+            "js": [
+                "filter-tauschwohnung.js"
+            ]
+        }
+    ],
+    "permissions": [
+        "activeTab"
+    ]
+}
